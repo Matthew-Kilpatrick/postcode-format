@@ -1,0 +1,22 @@
+{
+  "name": "postcode-format",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "JavaScript library to validate and format postcodes",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/jest/bin/jest.js tests"
+  },
+  "author": "Matthew Kilpatrick",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  }
+}
