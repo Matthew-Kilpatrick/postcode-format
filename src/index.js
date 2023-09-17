@@ -9,7 +9,7 @@ export default function format(country, postcode) {
     }
 
     const formatter = countryMap[country];
-    let trimmed = postcode.replace(/ -/g, '').toUpperCase();
+    let trimmed = postcode.replace(/ |-/g, '').toUpperCase();
 
     const formatted = formatter(trimmed);
     if (formatted) {
@@ -17,4 +17,4 @@ export default function format(country, postcode) {
     }
 
     throw new InvalidPostcodeException();
-}
+};
